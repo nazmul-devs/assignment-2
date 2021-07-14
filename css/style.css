@@ -220,6 +220,8 @@ footer .content span a:hover{
         align-items: center;
     }
 
+
+
     .navbar{
         width: 100%;
         display: none;
@@ -231,30 +233,34 @@ footer .content span a:hover{
         
     }
     .banner-text{
-        font-size: 44px;
-        width: 100%;
-        padding: 0;
-        
-        color: #fff;
-        margin: auto;
+        font-size: 36px;
+        line-height: 50px;
+       width: 100%;
+       margin:112px 0 50px 16px;
+         color: #fff;
+     
+    }
+ 
+    .banner-text h3{
+        margin:0 66px 30px 0;
     }
     
     .banner img{
         width: 330px;
-    height: 260px;
+        height: 260px;
     }
-
+    
     main section{
-        justify-content: center;
         align-items: center;
+        margin-top: 47px;
+        
        
         
     }
     .players{
         width: 100%;
-        display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-gap: 30px;
+        grid-row-gap: 24px;
     }
 
 
@@ -262,27 +268,41 @@ footer .content span a:hover{
 
 
 
-    
+.highlights{
+    margin: 0;
+    padding:0;
+    max-width: 100%;
+    height: auto;
+}
+.highlight{
+    width: 100%;
+}
 
 .highlight article{
     flex-direction: column;
     width: 100%;
 }
 .highlight article img{
-    width: 100vw;
     height: auto;
     object-fit: cover;
     padding: 20px;
+    
+    width: 328px;
+height: 248px;
    
 }
 .highlight-text{
-    text-align: center;
-    margin: 20px;
+    width: 100%;
+    font-size: 30px;
+    padding:0 16px;
+    margin: 0;
+}
+.highlight-text p{
+    margin: 8px 0 24px;
 }
 
+
 footer .content{
-    
-    
     margin:30px auto;
 }
 footer .content .logo{
