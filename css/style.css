@@ -48,7 +48,17 @@ nav ul li a{
     background: #E02C6D;
     border: none;
     cursor: pointer;
+    transition: .3s;
 
+}
+.btn:hover{
+    transform: translateX(5px);
+    background: #aa154c;
+   
+}
+.btn:active{
+    transform: scale(1.1);
+   
 }
 .banner{
     display: flex;
@@ -66,6 +76,15 @@ nav ul li a{
 .banner img{
     width: 556px;
     height: 438px;
+}
+.banner-logo{
+    
+    transition: .4s;
+}
+.banner:hover .banner-logo{
+    transform: translateX(-20px) scale(1.1);
+    
+    
 }
 
 
@@ -90,11 +109,19 @@ main section{
     height: 474px;
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
 }
 .player img{
     width: 300px;
     height: 256px;
     object-fit: cover;
+    transition: .5s;
+    
+    
+}
+.player:hover img{
+    
+    transform: translateY(-15px);
     
 }
 .player h3{
@@ -104,4 +131,169 @@ main section{
 .player p{
     font-size: 16px;
     color: #6C6C6C;
+}
+
+
+
+/* ===============================================================================
+                                   highlights section style
+================================================================================== */
+
+.highlights{
+    display: flex;
+    justify-content: center;
+    margin-top: 165px;
+}
+.highlight article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1050px;
+}
+.highlight article img{
+    width: 567px;
+    height: 427px;
+    object-fit: cover;
+   
+}
+.highlight-text{
+    margin-right: 65px;
+}
+.highlight-text h3{
+    font-size: 45px;
+    color: #0A0826;
+    line-height: 50px;
+    
+    
+}
+.highlight-text p{
+    font-size: 16px;
+    color: #6C6C6C;
+    text-align: justify;
+    margin-bottom: 24px;
+}
+
+
+
+/* ===============================================================================
+                                   footer section style
+================================================================================== */
+
+footer .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 155px 0 63px 0;
+}
+footer .content .logo{
+   width: 480px;
+   height: 110px;
+}
+footer .content span{
+    margin: 20px 0;
+}
+footer .content span a{
+    color: #10437A    ;
+    margin: 0 14px;
+    font-size: 22px;
+    transition: .5s;
+    
+}
+footer .content span a:hover{
+    color: #061c33    ;
+    
+
+    
+}
+
+
+/* ===============================================================================
+                                   media query for mobile
+================================================================================== */
+
+@media (max-width:662px) {
+    header, main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        
+    }
+    .banner-text{
+        font-size: 44px;
+        width: 100%;
+        padding: 0;
+        
+        color: #fff;
+        margin: auto;
+    }
+    
+    .banner img{
+        width: 330px;
+    height: 260px;
+    }
+
+    main section{
+        justify-content: center;
+        align-items: center;
+       
+        
+    }
+    .players{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+    }
+
+
+
+
+
+
+    
+
+.highlight article{
+    flex-direction: column;
+    width: 100%;
+}
+.highlight article img{
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    padding: 20px;
+   
+}
+.highlight-text{
+    text-align: center;
+    margin: 20px;
+}
+
+footer .content{
+    
+    
+    margin:30px auto;
+}
+footer .content .logo{
+   width: 280px;
+   height: 70px;
+}
+footer .content span{
+    margin: 20px 0;
+}
+
+
+
+    
 }
