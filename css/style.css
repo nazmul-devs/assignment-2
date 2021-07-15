@@ -275,7 +275,7 @@ footer .content span a:hover{
     height: auto;
 }
 .highlight{
-    width: 100%;
+    width: 330px;
 }
 
 .highlight article{
@@ -294,7 +294,7 @@ height: 248px;
 .highlight-text{
     width: 100%;
     font-size: 30px;
-    padding:0 16px;
+    padding:60px 15px 0px;
     margin: 0;
 }
 .highlight-text p{
@@ -316,4 +316,93 @@ footer .content span{
 
 
     
+}
+
+/* ===============================================================================
+                                   media query for pad
+================================================================================== */
+
+@media (max-width:992px) and (min-width:662px) {
+    header, main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        
+    }
+    .banner-text{
+        font-size: 46px;
+        line-height: 60px;
+       width: 100%;
+      padding: 30px 15px;
+     
+    }
+ 
+   
+    
+    .banner img{
+        width: 400px;
+        height: 320px;
+    }
+   
+
+    /* main section ================ */
+
+    .players{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 24px;
+        padding: 0 15px;
+    }
+
+
+/* highlight section ====================== */
+
+
+
+.highlights{
+    margin: 0;
+    padding:0;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.highlight article{
+    width: 100%;
+    flex-direction: column;
+}
+.highlight article img{
+  margin-top: 30px;
+   
+}
+.highlight-text{
+    width: 100%;
+    font-size: 30px;
+    padding:60px 15px 0px;
+    margin: 0;
+}
+.highlight-text p{
+    padding: 20px 0;
+}
+
+/* footer section ================= */
+
+footer .content{
+    margin:30px auto;
+}
+
+  
 }
